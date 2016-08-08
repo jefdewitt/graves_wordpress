@@ -1,0 +1,46 @@
+/**
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'LinBiolinum';
+  src: url('../fonts/LinBiolinum.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/LinBiolinum.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/LinBiolinum.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/LinBiolinum.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 400;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinBiolinum';
+  src: url('../fonts/LinBiolinumB.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/LinBiolinumB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/LinBiolinumB.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/LinBiolinumB.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 700;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Streetvertising';
+  src: url('../fonts/StreetvertisingLight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/StreetvertisingLight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/StreetvertisingLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/StreetvertisingLight.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 300;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Streetvertising';
+  src: url('../fonts/StreetvertisingBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/StreetvertisingBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/StreetvertisingBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/StreetvertisingBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: 700;
+       font-style: normal;
+}
+
+$primary: 'LinBiolinum';
+$secondary: 'Streetvertising';
