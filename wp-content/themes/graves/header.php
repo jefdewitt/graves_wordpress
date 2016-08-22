@@ -22,6 +22,21 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css" media="screen" />
 
+	<!--
+		*
+		*
+		*
+		*
+		*
+		TEST TEST TEST TEST TEST TEST
+		*
+		*
+		*
+		*
+		*
+		*
+	-->
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAcnTIumI8pgIB8ckFqGXv4OBXP1Kj36g&callback=initialize"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
@@ -38,7 +53,10 @@
 					<div class="header--wrap">
 	  		            <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/graves-logo.png">
 	  		            <div class="tagline">
-							<img src="<?php bloginfo('template_directory'); ?>/images/graves-logo.png"><p><?php //simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ?></p>
+							<img src="<?php bloginfo('template_directory'); ?>/images/graves-logo.png">
+							<p>There Is No Substitute For Authenticity</p>
+							<h1 style="opacity: 0;">Graves Architects</h1>
+							<p style="opacity: 0;">Graves Architects</p>
 						</div>
 	  		        </div>
 

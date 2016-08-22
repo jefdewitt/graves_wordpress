@@ -20,22 +20,31 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'graves');
+//define('DB_NAME', 'graves');
+define('DB_NAME', 'grav2836866716');
 
 /** MySQL database username */
-define('DB_USER', 'joncheatham');
+// define('DB_USER', 'joncheatham');
+//define('DB_USER', 'graves');
+define('DB_USER', 'grav2836866716');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'NightHawk');
+//define('DB_PASSWORD', 'NightHawk');
+define('DB_PASSWORD', 'tbO0koQ*Puf');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+//define('DB_HOST', 'localhost');
+define('DB_HOST', 'grav2836866716.db.2836866.hostedresource.com:3311');
+
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+define('WP_HOME', 'http://gravesarchitects.com');
+define('WP_SITEURL', 'http://gravesarchitects.com');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -78,6 +87,8 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+define('WP_ALLOW_REPAIR', true);
+
 
 /* That's all, stop editing! Happy blogging. */
 

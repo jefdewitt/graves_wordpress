@@ -1,0 +1,87 @@
+// Navigation
+
+
+#mobile-btn {
+
+    position: absolute;
+    top: 3em;
+    right: 1em;
+    width: 3em;
+    z-index: 400;
+
+    div {
+        width: 2em;
+        margin-bottom: 0.25em;
+        border-top: 0.25em solid #fff;
+    }
+}
+
+#site-header-menu {
+    margin: 0;
+}
+
+.graves-wrapper .nav,
+.nav {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+
+    &:before {
+        content: '';
+        background: $dark-blue;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    li {
+
+        list-style: none;
+        margin-bottom: 1em;
+        font-size: 1.75rem;
+        width: 100%;
+        border: none;
+
+        a {
+
+            color: $white;
+            font-family: $secondary;
+            padding: 0;
+            text-transform: uppercase;
+            transition: background 1s ease;
+
+            &:hover {
+                text-decoration: none;
+                background: $white;
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+.nav[data-state=hide] {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav[data-state=show] {
+    opacity: 0.9;
+    z-index: 300;
+    pointer-events: all;
+}

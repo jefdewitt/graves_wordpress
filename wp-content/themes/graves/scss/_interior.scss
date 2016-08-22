@@ -1,0 +1,195 @@
+// Interior pages
+
+.graves-wrapper .work {
+    background: none;
+}
+
+.interior--headline,
+.entry-header {
+
+    text-align: center;
+    margin: 2em auto;
+
+    @media screen and (min-width: 768px) {
+        width: 35em;
+    }
+
+    h1,
+    .entry-title {
+
+        font-family: $primary;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            white-space: nowrap;
+        }
+
+    }
+
+    p {
+        font-family: $secondary;
+        font-size: 1.25rem;
+        width: 20em;
+        margin: 0 auto 1em;
+    }
+}
+
+/**
+* Hide the interior page headlines unitl we get content
+*/
+.interior--headline p {
+    display: none;
+}
+
+/**
+* Work examples main landing page
+*/
+.portfolio {
+    max-width: 80em;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.portfolio img {
+    height: 15em;
+    overflow: hidden;
+}
+
+.portfolio a {
+
+    position: relative;
+    margin: 0.5em;
+    pointer-events: none;
+    font-family: $secondary;
+
+    .image__placeholder--overlay {
+        @extend .image__placeholder--overlay;
+    }
+}
+
+/**
+* Individual work pages
+*/
+.work.portfolio a {
+    pointer-events: all;
+}
+
+.mid-page--header {
+
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        margin: 0 0 1em;
+        text-transform: uppercase;
+        font-family: $primary;
+    }
+}
+
+/**
+* Various other interior elements
+*/
+.entry-title {
+    margin: 0;
+    font-weight: 400;
+}
+
+.entry-content {
+
+    max-width: 80em;
+    margin: auto;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    p {
+        margin: 0 .5em 1em;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        padding: 0 5em 2em;
+
+        p {
+
+            img {
+                height: 15em;
+                width: auto;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.page-id-390 .graves-wrapper {
+
+    .main-content {
+        position: relative;
+    }
+
+    .entry-content {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .graves-work {
+        padding: 0;
+    }
+
+    .work--wrap {
+
+        max-width: 80em;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        a {
+            margin: 0.25em 0.5em;
+        }
+
+        img {
+            overflow: hidden;
+            -webkit-filter: none;
+            height: 15em;
+        }
+    }
+}
+
+.error404 .site-main {
+
+    margin: 5em 0;
+
+    .error-404 {
+
+        text-align: center;
+
+        .page-header,
+        .page-title {
+            margin: 0;
+        }
+
+        .page-content {
+            padding: 0;
+        }
+    }
+}

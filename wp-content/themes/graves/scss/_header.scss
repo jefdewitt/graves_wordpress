@@ -1,0 +1,199 @@
+// Header
+
+/**
+* Site header
+*/
+
+.site-header {
+
+    padding: 2em;
+    position: relative;
+    border: 0;
+    overflow: hidden;
+
+    img {
+        width: 10em;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: url('../images/Indian River Web/IndianRiverResidence1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        -webkit-filter: blur(10px) grayscale(1);
+        z-index: 5;
+        top: 0;
+        left: 0;
+    }
+
+    &:after {
+        background: #151942;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: inline-block;
+    }
+}
+
+.graves-wrapper header {
+    position: relative;
+}
+
+.header {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+
+    &:before,
+    &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+    }
+
+    &:before {
+        background: url('../images/Indian River Web/IndianRiverResidence1.jpg');
+        background-size: cover;
+        -webkit-filter: blur(8px) grayscale(1);
+        z-index: 5;
+    }
+
+    &:after {
+        background: #151942;
+        opacity: .8;
+        z-index: 10;
+        top: 0;
+        display: inline-block;
+    }
+
+    h1, h2, p {
+        color: #fff;
+    }
+}
+
+.header--wrap {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 200;
+
+    img {
+        width: 15em;
+    }
+}
+
+.logo {
+    animation: bulge 2s ease forwards;
+}
+
+.tagline {
+
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: reveal 4s ease forwards;
+    margin-top: 10em;
+
+    img {
+        margin-bottom: 2em;
+        width: 17rem;
+    }
+
+    p {
+        font-size: 1.375rem;
+        font-family: $primary;
+    }
+}
+
+@keyframes bulge {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    margin-top: 10em;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 5em;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/**
+* Bobbing down arrow at the bottom of the homepage full screen header
+*/
+.down-arrow {
+    content: '';
+    position: absolute;;
+    width: 1em;
+    height: 1em;
+    top: 86%;
+    left: 50%;
+    transform: rotate(45deg);
+    border-right: 0.15em solid #fff;
+    border-bottom: 0.15em solid #fff;
+    animation: bob 3s ease infinite;
+    z-index: 300;
+}
+
+@keyframes bob {
+    0%{
+        top: 86%
+    }
+    25%{
+        top: 83%
+    }
+    50%{
+        top: 86%
+    }
+    75%{
+        top: 83%
+    }
+    100%{
+        top: 86%
+    }
+}
+
+.site-header-main {
+    height: 100%;
+}

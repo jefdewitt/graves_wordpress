@@ -10,6 +10,8 @@
  */
 ?>
 
+	<h3 class="photog-credit"><?php echo get_field('photographer'); ?><h3>
+
 		<footer id="contact" class="footer">
 
 			<div>

@@ -1,0 +1,317 @@
+// Homepage
+
+
+/**
+* Work Section
+*/
+
+// These image containers are used site wide.
+.image__container {
+
+    max-width: 60em; // 960px
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.image__container a {
+
+    width: 100%;
+    max-height: 15em;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 33%;
+    }
+
+    img {
+        transform: scale(1);
+        -webkit-filter: grayscale(100%);
+        transition: all 3s ease;
+        height: 15em;
+        width: 20em;
+
+        &:hover {
+            -webkit-filter: grayscale(25%);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.image__placeholder {
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    p {
+        color: $white;
+    }
+}
+
+.image__placeholder--overlay {
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+
+    p {
+        color: $white;
+    }
+}
+
+.work--wrap {
+
+    text-align: center;
+    margin-bottom: 5em;
+
+    h2 {
+        color: $dark-blue;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 5em;
+    }
+}
+
+.additional-work {
+
+    background: $dark-blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em 0;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        padding: 3em 0;
+    }
+
+    p, a {
+        color: $white;
+    }
+}
+
+.additional-work--copy {
+
+    text-align: center;
+
+    img {
+        width: 2em;
+        margin-bottom: 1em;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        margin: 0;
+        text-align: left;
+
+        img, p {
+            display: inline-block;
+        }
+
+        img {
+            margin-right: 0.5em;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0;
+            vertical-align: bottom;
+        }
+    }
+}
+
+.additional-work--link {
+
+    @include ghost-button ($white);
+
+    &:hover {
+
+        a {
+            color: $dark-blue;
+            text-decoration: none;
+        }
+    }
+}
+
+/**
+* About Section
+*/
+
+.about {
+
+    background-size: cover;
+    background-position: left;
+    -webkit-filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+    overflow: hidden;
+    position: relative;
+    height: 40em;
+
+    @media screen and (min-width: 768px) {
+        background-position: right;
+        margin-bottom: 5em;
+        align-items: flex-start;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        background: rgba(0,0,0,.4);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        @media screen and (min-width: 768px) {
+            background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.about--content {
+
+    width: 20em;
+    position: relative;
+    z-index: 100;
+
+    h2, p {
+        color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 20em;
+        position: absolute;
+        z-index: 100;
+        left: 10%;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+}
+
+/**
+* Location Section
+*/
+.half-and-half--wrap {
+
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.half-and-half {
+
+    text-align: center;
+    padding: 5em 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.first {
+        background: $light-blue;
+    }
+    &.second {
+        background: $pale-blue;
+    }
+
+    h3, p, a {
+        color: $white;
+    }
+
+    h3 {
+        font-family: $secondary;
+        font-family: 1.1rem;
+        font-weight: 700;
+    }
+}
+
+.half-and-half--content {
+
+    width: 25em;
+    margin: auto;
+
+    img {
+        margin-bottom: 1em;
+        width: 3em;
+    }
+
+    h3 {
+        margin-bottom: 0.25em;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.location {
+    overflow: hidden;
+}
+
+.map-wrap {
+
+    height: 20em;
+
+    @media screen and (min-width: 768px) {
+        height: 25em; // 600px
+    }
+}
+
+#map {
+
+    // These three properties are key for the API to display the map properly.
+    position: absolute;
+    width: 100%;
+    height: 20em;
+
+    @media screen and (min-width: 768px) {
+        height: 25em; // 600px
+    }
+}
+
+.home {
+    article,
+    #colophon {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+// Mixins
+
+/**
+* Buttons
+*/
+@mixin ghost-button ($color){
+
+    border: 0.2em solid $color;
+    padding: 0.5em 1em;
+    font-size: 0.9rem;
+
+    &:hover {
+        background: $color;
+    }
+}
