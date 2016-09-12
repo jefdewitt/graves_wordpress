@@ -34,6 +34,11 @@
 
 			</div>
 
+			<div class="signature">
+            	<p>JD</p>
+  	  			<p>Site by <a href="https://jefdewitt.com">Jef DeWitt</a></p>
+  			</div>
+
 		</footer><!-- .site-footer -->
 
 		</div><?php // .main-content ?>

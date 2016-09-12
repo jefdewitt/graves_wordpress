@@ -103,6 +103,37 @@ footer {
     }
 }
 
+.signature {
+    float: right;
+    bottom: 3.3em;
+    right: 1em;
+    font-size: 0.75em;
+    background: transparent !important;
+    p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+        &:first-child {
+            opacity: 1;
+        }
+        &:last-child {
+            opacity: 0;
+        }
+        &:hover {
+            &:first-child {
+                opacity: 0;
+            }
+            &:last-child {
+                opacity: 1;
+                white-space: nowrap;
+                left: -100%;
+            }
+        }
+    }
+}
+
 
 @keyframes jiggle {
     25% {

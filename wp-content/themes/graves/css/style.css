@@ -964,6 +964,29 @@ footer {
 .footer--social img {
   width: 2em; }
 
+.signature {
+  float: right;
+  bottom: 3.3em;
+  right: 1em;
+  font-size: 0.75em;
+  background: transparent !important; }
+  .signature p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease; }
+    .signature p:first-child {
+      opacity: 1; }
+    .signature p:last-child {
+      opacity: 0; }
+    .signature p:hover:first-child {
+      opacity: 0; }
+    .signature p:hover:last-child {
+      opacity: 1;
+      white-space: nowrap;
+      left: -100%; }
+
 @keyframes jiggle {
   25% {
     transform: rotate(-25deg); }
