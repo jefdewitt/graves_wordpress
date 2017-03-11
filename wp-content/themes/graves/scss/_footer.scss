@@ -109,6 +109,8 @@ footer {
     right: 1em;
     font-size: 0.75em;
     background: transparent !important;
+    overflow: visible !important;
+    white-space: nowrap;
     p {
         position: absolute;
         left: 50%;
@@ -121,15 +123,14 @@ footer {
         &:last-child {
             opacity: 0;
         }
-        &:hover {
-            &:first-child {
-                opacity: 0;
-            }
-            &:last-child {
-                opacity: 1;
-                white-space: nowrap;
-                left: -100%;
-            }
+    }
+    &:hover {
+        p:first-child {
+            opacity: 0;
+        }
+        p:last-child {
+            opacity: 1;
+            left: -100%;
         }
     }
 }

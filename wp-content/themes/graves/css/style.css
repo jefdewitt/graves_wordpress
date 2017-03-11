@@ -969,7 +969,9 @@ footer {
   bottom: 3.3em;
   right: 1em;
   font-size: 0.75em;
-  background: transparent !important; }
+  background: transparent !important;
+  overflow: visible !important;
+  white-space: nowrap; }
   .signature p {
     position: absolute;
     left: 50%;
@@ -980,12 +982,11 @@ footer {
       opacity: 1; }
     .signature p:last-child {
       opacity: 0; }
-    .signature p:hover:first-child {
-      opacity: 0; }
-    .signature p:hover:last-child {
-      opacity: 1;
-      white-space: nowrap;
-      left: -100%; }
+  .signature:hover p:first-child {
+    opacity: 0; }
+  .signature:hover p:last-child {
+    opacity: 1;
+    left: -100%; }
 
 @keyframes jiggle {
   25% {
