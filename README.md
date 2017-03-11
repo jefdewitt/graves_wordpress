@@ -17,11 +17,11 @@ Find a download version or the CDN of the jQuery library at [https://jquery.com/
 
 # Creating Your Own Child Theme
 
-If you want to create a child theme of your own, check out this [page](https://codex.wordpress.org/Child_Themes). It describes what a child theme is, the advantages of using this method for your WordPress development, and instructs you step-by-step.
+If you want to create a child theme of your own, check out this [page](https://codex.wordpress.org/Child_Themes). It describes what a child theme is, the advantages of using this method for your WordPress development, and step-by-step instructions.
 
 # Screenshot
 
-![Gravesarchitects.com screenshot](https://raw.github.com/jefdewitt/graves-wordress/master/gravesarchitects-website.png?raw=true "Gravesarchitects screenshot")
+![Gravesarchitects.com screenshot](https://raw.github.com/jefdewitt/graves_wordress/master/gravesarchitects-website.png?raw=true "Gravesarchitects screenshot")
 
 ## Comments
 
