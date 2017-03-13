@@ -23,6 +23,8 @@ If you want to create a child theme of your own, check out this [page](https://c
 
 ![Gravesarchitects.com screenshot](https://raw.github.com/jefdewitt/graves_wordress/graves_wordpress/master/gravesarchitects-website.png?raw=true "Gravesarchitects.com screenshot")
 
+![Gravesarchitects.com screenshot](https://raw.github.com/jefdewittgraves_wordpress/gravesarchitects-website.png "Gravesarchitects.com screenshot")
+
 ## Comments
 
 Any questions or comments please send them my way [here](http://www.jefdewitt.com/connect).
