@@ -21,8 +21,6 @@ If you want to create a child theme of your own, check out this [page](https://c
 
 # Screenshot
 
-![Gravesarchitects.com screenshot](https://raw.github.com/jefdewitt/graves_wordress/master/gravesarchitects-website.png?raw=true "Gravesarchitects.com screenshot")
-
 ![Gravesarchitects.com screenshot](gravesarchitects-website.png "Gravesarchitects.com screenshot")
 
 ## Comments
