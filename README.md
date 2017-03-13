@@ -1,6 +1,6 @@
-# graves_wordpress
+# Graves Architects WordPress Site
 
-Graves Architects' WordPress site. This was originally a Jekyll build but I later converted it over to WordPress to offer the client more admin features and content control. It's the digital face of an architecture firm based in Lexington, KY.
+[Graves Architects](http://gravesarchitects.com/)' WordPress site. This was originally a Jekyll build but I later converted it over to WordPress to offer the client more admin features and content control. It's the digital face of an architecture firm based in Lexington, KY.
 
 I created a child theme using the files from the `twentysixteen` default WordPress Theme. The scaffolding of the files was changed substantially to offer a completely unique look and feel to the client. I also use a little jQuery action to spice things up.
 
